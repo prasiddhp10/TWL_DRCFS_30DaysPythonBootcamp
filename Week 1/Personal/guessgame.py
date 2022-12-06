@@ -1,9 +1,10 @@
 import random
-i = random.randint(0,10000)
-for i in range(3):
-    a = int(input("Enter a number below 10000: "))
+i = random.randint(0,10)
+for k in range(5):
+    a = int(input("Enter a number below 10: "))
     if i == a: 
-        print("Correct guess")
+        print(f"Correct answer in {k+1} tries")
+        break
     elif i < a: 
         print("Guess a lower number")
     else: 
