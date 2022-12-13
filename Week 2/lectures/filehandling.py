@@ -4,9 +4,24 @@ pwd = open('passwords.txt','r')
 print(pwd)
 
 # Read the contents of the file
-actual_file = pwd.read()
+actual_file = pwd.read().split()
 # Print the contents
-print(actual_file)
+print(actual_file[0].split(',')[1])
+
+for uname_pwd in actual_file:
+   username, password = uname_pwd.split(',')
+   print(f'The password of {username} is {password}')
+
+
+
+
+
+
+
+
+
+
+
 
 pwd.close()
 
@@ -35,13 +50,13 @@ pwd.close()
 ###########################################################
 
 # # Open the file in write-only mode
-# file = open("my_file.txt", "w")
+file = open("my_file.txt", "w")
 
-# # Write some text to the file
-# file.write("Hello, world!")
+# Write some text to the file
+file.write("Hello, world!")
 
-# # Close the file
-# file.close()
+# Close the file
+file.close()
 ###########################################################
 
 # we use the open() function to open the file in write-only mode. 
@@ -68,13 +83,13 @@ pwd.close()
 
 ###########################################################
 # # Open the file in append mode
-# file = open("my_file.txt", "a")
+file = open("my_file.txt", "a")
 
-# # Append some text to the file
-# file.write("\nThis is an additional line.")
+# Append some text to the file
+file.write("\nThis is an additional line.")
 
-# # Close the file
-# file.close()
+# Close the file
+file.close()
 ###########################################################
 
 # we use the open() function to open the file in append mode. 
