@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 Hello, world!
 This is an additional line.
+=======
+Hello !
+Konichiwa.
+Nihao.
+>>>>>>> 30a7ec04f61e274a47e8da244493900c38d99cf7
